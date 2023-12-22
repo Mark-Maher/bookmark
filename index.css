@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7ecde;
+}
+/* font-family: 'Caveat', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive; */
+h1 {
+  font-family: "Pacifico", cursive;
+  width: fit-content;
+}
+.main h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+}
+h1:hover::before {
+  height: 55%;
+}
+.bookmark-body {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+.bookmark-body h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  color: transparent;
+}
+label {
+  font-family: "Montserrat", sans-serif;
+}
