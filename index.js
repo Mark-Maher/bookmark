@@ -12,11 +12,12 @@ localStorage.getItem("bookmark") != null &&
 // localStorage.clear();
 function submit() {
   if (
-    (isNaN(siteName.value) &&
-      url.value.startsWith("www") &&
-      url.value.startsWith("Www") &&
-      url.value.endsWith(".com")) ||
-    url.value.startsWith("https://")
+    isNaN(siteName.value) ||
+    url.value.startsWith("www") ||
+    (url.value.startsWith("Www") &&
+      url.value.endsWith(".com") &&
+      url.value.startsWith("https://")) ||
+    url.value.startsWith("Https://")
   ) {
     console.log(typeof url.value);
     addProduct();
