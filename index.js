@@ -14,6 +14,7 @@ function submit() {
   if (
     (isNaN(siteName.value) &&
       url.value.startsWith("www") &&
+      url.value.startsWith("Www") &&
       url.value.endsWith(".com")) ||
     url.value.startsWith("https://")
   ) {
